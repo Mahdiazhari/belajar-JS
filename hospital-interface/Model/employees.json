@@ -1,16 +1,9 @@
 [
-	{
-		"id": 1,
-		"username": "boss",
-		"password": "admin",
-		"role": "employee",
-		"login": false
-	},
-	{
-		"id": 2,
-		"username": "dr.bernard",
-		"password": "password",
-		"role": "doctor",
-		"login": false
-	}
+    {
+        "id": 2,
+        "username": "dr.bernard",
+        "password": "password",
+        "role": "doctor",
+        "login": false
+    }
 ]

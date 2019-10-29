@@ -29,8 +29,15 @@ class Controller {
 		Model.getList((err, instanceEmployees) => {
 			if (err) throw err;
 			else {
-				Model.delete(username);
-				console.log('Berhasil delete');
+				for (var i = 0; i < instanceEmployees.length; i++) {
+					if (instanceEmployees[i].username == username) {
+						instanceEmployees.splice(i, 1);
+					}
+				}
+				Model.save(instanceEmployees, (err) => {
+					if (err) throw err;
+					else View.log('Delete Success!');
+				});
 			}
 		});
 	}

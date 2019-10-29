@@ -63,19 +63,6 @@ class Model {
 			}
 		);
 	}
-
-	static delete(username , callback) {
-		Model.getList((err, instanceEmployees) => {
-			if (err) throw err;
-			else {
-				for (var i = 0; i < instanceEmployees.length; i++) {
-					if (instanceEmployees[i].username == username) {
-						instanceEmployees.splice(i, 1);
-					}
-				}
-			}
-		});
-	}
 }
 
 module.exports = Model;
