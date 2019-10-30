@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>DISPLAY TEACHERS</title>
+	</head>
+	<body>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Subject</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% teachers.forEach((el) => { %>
+					<tr>
+						<td><%= el.name %></td>
+						<td><%= el.subject%></td>
+					</tr>
+					<% }) %>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

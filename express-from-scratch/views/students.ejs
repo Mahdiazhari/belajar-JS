@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>DISPLAY STUDENTS</title>
+	</head>
+	<body>
+		<div>
+			<form action="/students/input" method="POST">
+				Name :<br />
+				<input type="text" name="name" />
+				<br />
+				Age :<br />
+				<input type="text" name="age" />
+				<br /><br />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% students.forEach((el) => { %>
+					<tr>
+						<td><%= el.name%></td>
+						<td><%= el.age%></td>
+					</tr>
+					<% }) %>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
