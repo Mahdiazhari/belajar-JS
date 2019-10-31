@@ -1,0 +1,21 @@
+{
+  "name": "express-sequelize",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "pg": "^7.12.1",
+    "sequelize": "^5.21.2",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

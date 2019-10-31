@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>DISPLAY STUDENTS</title>
+	</head>
+	<body>
+		<div>
+			<h2>VIEW STUDENT TABLE</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% list.forEach((el) => { %>
+					<tr>
+						<td><%= el.name%></td>
+						<td><%= el.age%></td>
+					</tr>
+					<% }) %>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h2>INPUT STUDENT HERE</h2>
+			<form action="/students/input" method="POST">
+				Name :<br />
+				<input type="text" name="name" />
+				<br />
+				Age :<br />
+				<input type="text" name="age" />
+				<br /><br />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		<div>
+			<h2>EDIT STUDENT HERE</h2>
+			<form action="/students/edit" method="POST">
+				ID :<br />
+				<input type="number" name="id" />
+				<br />
+				Name :<br />
+				<input type="text" name="editName" />
+				<br />
+				Age :<br />
+				<input type="text" name="editAge" />
+				<br /><br />
+				<input type="submit" value="Edit" />
+			</form>
+		</div>
+	</body>
+</html>
