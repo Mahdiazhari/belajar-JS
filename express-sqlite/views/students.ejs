@@ -19,8 +19,8 @@
 				<tbody>
 					<% list.forEach((el) => { %>
 					<tr>
-						<td><%= el.name%></td>
-						<td><%= el.age%></td>
+						<td><%= el.name %></td>
+						<td><%= el.age %></td>
 					</tr>
 					<% }) %>
 				</tbody>
@@ -28,6 +28,7 @@
 		</div>
 		<div>
 			<h2>INPUT STUDENT HERE</h2>
+
 			<form action="/students/input" method="POST">
 				Name :<br />
 				<input type="text" name="name" />
@@ -39,7 +40,7 @@
 			</form>
 		</div>
 		<div>
-			<h2>EDIT STUDENT HERE</h2>
+			<h2>EDIT/DELETE STUDENT HERE</h2>
 			<form action="/students/edit" method="POST">
 				ID :<br />
 				<input type="number" name="id" />
@@ -51,6 +52,7 @@
 				<input type="text" name="editAge" />
 				<br /><br />
 				<input type="submit" value="Edit" />
+				<input type="submit" value="Delete" formaction="/students/delete" />
 			</form>
 		</div>
 	</body>

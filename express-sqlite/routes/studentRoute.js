@@ -8,6 +8,8 @@ router.post('/input', studentController.postStudent);
 
 router.post('/edit', studentController.editStudent);
 
+router.post('/delete', studentController.deleteStudent);
+
 module.exports = router;
 
 /**

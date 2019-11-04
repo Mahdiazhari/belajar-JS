@@ -1,3 +1,5 @@
+const Teacher = require('../models/teacher');
+
 class teacherController {
 	static renderTeacher(req, res) {
 		res.render('teachers');
